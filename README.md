@@ -1,9 +1,9 @@
-# 👨‍💻 Midas Oden | IT Operations & Aspiring Developer
+# 👨🏾‍💻 Midas Oden | IT Operations & Aspiring Developer
 [![GitHub Badge](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github&logoColor=white)](https://github.com/KiNGxMiDAS)
 [![LinkedIn Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/midasoden/)
 [![Email Badge](https://img.shields.io/badge/-Email-critical?style=flat-square&logo=mail.ru&logoColor=white)](mailto:midasoden@pm.me)
 
-Hey there! 👋 I'm **Midas**, a soon-to-be Computer Science graduate with a passion for using technology to solve problems, build cool stuff, and make life better for everyone. I'm a results-oriented, resourceful IT professional with experience in technical support, network troubleshooting, and software development.
+Hey there! 👋🏾 I'm **Midas**, a soon-to-be Computer Science graduate with a passion for using technology to solve problems, build cool stuff, and make life better for everyone. I'm a results-oriented, resourceful IT professional with experience in technical support, network troubleshooting, and software development.
 
 When I’m not coding or diving into tech, I’m outside exploring, reading, or soaking in art and music.
 
