@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "genesis-7b703"
-  }
+    "kingmidas": "kingmidas-pingme",
+    "default": "kingmidas-pingme"
+  },
+  "targets": {},
+  "etags": {}
 }
