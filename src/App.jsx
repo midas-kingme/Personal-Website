@@ -6,7 +6,7 @@ import './App.css'
 // Import the functions you need from the Firebase SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import firebaseConfig from "../.firebase/firebaseConfig.js"; // NO CURLY BRACES {} NEEDED WHEN IMPORTING A DEFAULT EXPORT
+import firebaseConfig from "firebaseConfig.js"; // NO CURLY BRACES {} NEEDED WHEN IMPORTING A DEFAULT EXPORT
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
