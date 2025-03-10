@@ -1,7 +1,8 @@
 {
   "projects": {
     "kingmidas": "kingmidas-pingme",
-    "default": "kingmidas-pingme"
+    "default": "hiremelol",
+    "hiremelol": "hiremelol"
   },
   "targets": {},
   "etags": {}

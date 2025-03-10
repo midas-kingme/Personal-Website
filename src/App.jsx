@@ -3,23 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-// FIREBASE: Import the functions you need from the SDKs you need
+// Import the functions you need from the Firebase SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import firebaseConfig from "../.firebase/firebaseConfig.js"; // NO CURLY BRACES {} NEEDED WHEN IMPORTING A DEFAULT EXPORT
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBEwls2c6xwxtNSqQFHvieyL1DNpBVSq1o",
-  authDomain: "kingmidas-pingme.firebaseapp.com",
-  projectId: "kingmidas-pingme",
-  storageBucket: "kingmidas-pingme.firebasestorage.app",
-  messagingSenderId: "143693335285",
-  appId: "1:143693335285:web:5816e7ca1cbf7cb06b13bc",
-  measurementId: "G-66H7R2D71S"
-};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
