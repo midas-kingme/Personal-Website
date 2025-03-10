@@ -1,4 +1,6 @@
-const Background = () => (
+import '../styles/animations.css'; // Import animations
+
+const AnimatedBackground = () => (
   <section className="animated-background">
     <div id="stars1"></div>
     <div id="stars2"></div>
@@ -6,4 +8,4 @@ const Background = () => (
   </section>
 );
 
-export default Background;
+export default AnimatedBackground;
