@@ -1,0 +1,144 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.entire-document {
+  padding: 1rem 0px;
+  margin: 0.5rem;
+}
+
+/* Header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  text-align: right;
+  color: #777;
+  font-size: 12px;
+}
+
+/* Section styles */
+h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-header {
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Experience entries */
+.job {
+  margin-bottom: 15px;
+}
+
+.job-title-and-date {
+  display: flex;
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.job-company {
+  font-weight: bold;
+}
+
+.job-title {
+/*   background-color: blueviolet; */
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.job-date {
+/*   background-color: rgb(197, 34, 34); */
+  text-align: right;
+}
+
+.job-date > div {
+/*   background-color: rgb(85, 222, 12); */
+  text-align: right;
+  font-size: 12px;
+/*   font-weight: bold; */
+}
+
+.job-location {
+  text-align: right;
+}
+
+/* List styles */
+ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Education section */
+.education-entry {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+/* Skills section */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.skill-category {
+  margin-bottom: 10px;
+}
+
+.skill-category h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* For print */
+@media print {
+  body {
+      padding: 0;
+      font-size: 12px;
+  }
+  
+  .section-header {
+      font-size: 14px;
+  }
+}
