@@ -31,7 +31,7 @@ function App() {
     <>
       <AnimatedBackground />
       <ProfilePicture image="./assets/midas.jpeg" />
-      <UserInfo username="MiDAS : )" hashtag="#CashApp -> $MidasOden ❤" />
+      <UserInfo username="MiDAS : )" hashtag="#helloworld -> :)" />
       <Links />
       <Popup 
         image="./assets/midas.jpeg" 
