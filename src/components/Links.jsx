@@ -4,7 +4,7 @@ const Links = () => {
   const links = [
     { href: "https://github.com/kingmidas-hack", icon: "fab fa-github", text: "Github" },
     { href: "https://www.linkedin.com/in/midasoden/", icon: "fab fa-linkedin", text: "LinkedIn" },
-    { href: "https://beta.crunchyroll.com/crunchylists/eeb252c9-fb45-483a-b119-3ba075445157", icon: "fa fa-play-circle", text: "MyAnimeList" }
+    { href: "https://www.goodreads.com/review/list/189102741?ref=nav_mybooks", icon: "fa fa-play-circle", text: "Reading List" }
   ];
 
   return (
