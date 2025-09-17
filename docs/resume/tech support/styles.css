@@ -3,16 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: #333;
   background-color: #fff;
   padding: 20px;
-  max-width: 850px;
   margin: 0 auto;
 }
 
@@ -24,14 +23,30 @@ body {
 /* Header section */
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.name-title h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.name-title p {
+  font-size: 16px;
+  color: #666;
   margin-bottom: 15px;
 }
 
 .contact-info {
-  text-align: right;
   color: #777;
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.contact-info p {
+  margin-bottom: 3px;
 }
 
 /* Section styles */
@@ -42,19 +57,23 @@ h1 {
 }
 
 .section {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .section-header {
-  border-bottom: 1px solid #000;
-  padding-bottom: 3px;
-  margin-bottom: 10px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
   font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 /* Experience entries */
 .job {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  border-left: 3px solid #f0f0f0;
+  padding-left: 15px;
 }
 
 .job-title-and-date {
@@ -65,37 +84,37 @@ h1 {
 }
 
 .job-header {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .job-company {
   font-weight: bold;
-}
-
-.job-title {
-/*   background-color: blueviolet; */
-  font-family: Arial, sans-serif;
-  font-style: italic;
-  margin-bottom: 5px;
-}
-
-.job-date {
-/*   background-color: rgb(197, 34, 34); */
-  text-align: right;
-}
-
-.job-date > div {
-/*   background-color: rgb(85, 222, 12); */
-  text-align: right;
-  font-size: 12px;
-/*   font-weight: bold; */
+  font-size: 16px;
+  color: #000;
 }
 
 .job-location {
+  color: #666;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.job-title {
+  font-style: italic;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 15px;
+}
+
+.job-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.job-date > div {
   text-align: right;
+  font-size: 12px;
 }
 
 /* List styles */
@@ -105,40 +124,109 @@ ul {
 }
 
 li {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  font-size: 15px;
 }
 
 /* Education section */
 .education-entry {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+}
+
+.education-entry div {
+  font-size: 15px;
 }
 
 /* Skills section */
 .skills-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .skill-category {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .skill-category h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #000;
+  font-weight: bold;
+}
+
+.skill-category ul {
+  margin-bottom: 0;
+}
+
+.skill-category li {
   font-size: 14px;
   margin-bottom: 5px;
+}
+
+/* Tablet styles */
+@media (min-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 40px;
+    max-width: 1000px;
+  }
+  
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .contact-info {
+    text-align: right;
+  }
+  
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .job-date {
+    text-align: right;
+  }
+  
+  .education-entry {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 900px) {
+  body {
+    padding: 60px;
+    max-width: 1200px;
+  }
+  
+  .skills-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* For print */
 @media print {
   body {
-      padding: 0;
-      font-size: 12px;
+    padding: 0;
+    font-size: 12px;
   }
   
   .section-header {
-      font-size: 14px;
+    font-size: 14px;
+  }
+  
+  .job {
+    border-left: none;
+    padding-left: 0;
   }
 }
