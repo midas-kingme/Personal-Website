@@ -2,7 +2,7 @@ import '../styles/components.css';
 
 const Links = () => {
   const links = [
-    { href: "https://github.com/kingmidas-hack", icon: "fab fa-github", text: "Github" },
+    { href: "https://midas-kingme.github.io/src/Welcome.html", icon: "fab fa-github", text: "Not a blog" },
     { href: "https://www.linkedin.com/in/midasoden/", icon: "fab fa-linkedin", text: "LinkedIn" },
     { href: "https://www.goodreads.com/review/list/189102741?ref=nav_mybooks", icon: "fa fa-play-circle", text: "Reading List" }
   ];
