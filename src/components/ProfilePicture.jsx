@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import '../styles/components.css';
 
 const ProfilePicture = ({ image }) => (
@@ -6,5 +7,8 @@ const ProfilePicture = ({ image }) => (
   </a>
 );
 
-export default ProfilePicture;
+ProfilePicture.propTypes = {
+  image: PropTypes.string.isRequired,
+};
 
+export default ProfilePicture;

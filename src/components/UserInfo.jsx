@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import '../styles/components.css';
 
 const UserInfo = ({ username, hashtag }) => (
@@ -7,14 +8,9 @@ const UserInfo = ({ username, hashtag }) => (
   </>
 );
 
+UserInfo.propTypes = {
+  username: PropTypes.string.isRequired,
+  hashtag: PropTypes.string.isRequired,
+};
+
 export default UserInfo;
-
-
-
-// const UserInfo = () => (
-//   <div id="userName">
-//     MiDAS : )
-//   </div>
-// );
-
-// export default UserInfo;
