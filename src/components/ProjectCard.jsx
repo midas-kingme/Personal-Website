@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'; // Add this import at the top
+
 function ProjectCard({ title, description, github }) {
   return (
     <div className="project-card">
@@ -12,5 +14,12 @@ function ProjectCard({ title, description, github }) {
     </div>
   );
 }
+
+// Add this validation block at the bottom
+ProjectCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  github: PropTypes.string
+};
 
 export default ProjectCard;

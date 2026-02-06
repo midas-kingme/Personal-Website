@@ -77,3 +77,22 @@
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+
+.project-card {
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent white border */
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px; /* Or use min-width/max-width */
+  background: rgba(0, 0, 0, 0.5); /* Slight dark background to read text over stars */
+  transition: transform 0.3s ease;
+  
+  /* Flexbox for inside the card to push the button to bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Cool hover effect */
+  border-color: #fff;
+}
