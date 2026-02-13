@@ -8,12 +8,12 @@ function Projects() {
       <h1>My Projects</h1>
 
       {/* New Container for the cards */}
-      <div className="projects-grid" style={{ 
-          display: "flex", 
-          flexWrap: "wrap", 
-          justifyContent: "center", 
-          gap: "20px",
-          marginTop: "40px"
+      <div className="projects-grid" style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        gap: "20px",
+        marginTop: "40px"
       }}>
         <ProjectCard
           title="thoughtSpace"
@@ -24,7 +24,7 @@ function Projects() {
         <ProjectCard
           title="Auburn Coursework"
           description="An overview of some of the programming courses taken at Auburn University."
-          github="https://github.com/midas-kingme/Auburn-Courses"
+          link="/auburn"
         />
 
         <ProjectCard

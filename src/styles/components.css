@@ -1,4 +1,5 @@
-#profilePicture, #profilePicture img {
+#profilePicture,
+#profilePicture img {
   position: relative;
   width: 96px;
   height: 96px;
@@ -39,7 +40,8 @@
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
-  padding: 10px; /* 17px */
+  padding: 10px;
+  /* 17px */
   text-decoration: none;
   /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
   -webkit-tap-highlight-color: transparent;
@@ -47,8 +49,8 @@
 
 @media (hover: hover) {
   .link:hover {
-      background-color: var(--accentColor);
-      color: var(--bgColor);
+    background-color: var(--accentColor);
+    color: var(--bgColor);
   }
 }
 
@@ -79,20 +81,42 @@
 }
 
 .project-card {
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent white border */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Semi-transparent white border */
   border-radius: 12px;
   padding: 20px;
-  width: 300px; /* Or use min-width/max-width */
-  background: rgba(0, 0, 0, 0.5); /* Slight dark background to read text over stars */
+  width: 300px;
+  /* Or use min-width/max-width */
+  background: rgba(0, 0, 0, 0.5);
+  /* Slight dark background to read text over stars */
   transition: transform 0.3s ease;
-  
+
   /* Flexbox for inside the card to push the button to bottom */
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 .project-card:hover {
-  transform: translateY(-5px); /* Cool hover effect */
+  transform: translateY(-5px);
+  /* Cool hover effect */
   border-color: #fff;
+}
+
+.project-link {
+  color: #646cff;
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Add this to ensure visited links don't turn a dull purple/blue */
+.project-link:visited {
+  color: #646cff;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  /* Optional: Makes it pop white on hover */
 }
